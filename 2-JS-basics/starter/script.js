@@ -151,3 +151,47 @@ GOOD LUCK 😀
 // console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBmi);
 // console.log('Mark BMI: ' + bmiMark, 'John BMI: ' + bmiJohn)
 
+
+
+
+/*****************************
+* IF ELSE STATEMENTS
+*/
+
+
+var firstName = 'john';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married!');
+} else {
+    console.log(firstName + ' will hopefully marry soon :) ');
+}
+
+var isMarried = true;
+if (isMarried) {
+    console.log(firstName + ' is married!');
+} else {
+    console.log(firstName + ' will hopefully marry soon :) ');
+}
+
+
+
+
+var massJohn, heightJohn, bmiJohn, massMark, heightMark, bmiMark, markHigherBmi;
+massMark = 78; //kg
+heightMark = 1.69; //meters
+bmiMark = massMark / (heightMark * heightMark);
+
+massJohn = 92; // kg
+heightJohn = 1.95; // meters
+bmiJohn = massJohn / (heightJohn * heightJohn);
+
+if (bmiMark>bmiJohn) {
+    console.log('Mark\'s BMI is  higher than John\'s')
+} else {
+    console.log('John\'s BMI is higher than Mark\'s')
+}
+// markHigherBmi = bmiMark > bmiJohn;
+// console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBmi);
+// console.log('Mark BMI: ' + bmiMark, 'John BMI: ' + bmiJohn)
