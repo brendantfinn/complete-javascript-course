@@ -108,3 +108,14 @@ var x, y;
 x = y = (3+5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // ===26
 // ASIGNMENT OPERATOR ASSOCIATIVITY WORKS RIGTH TO LEFT 
 console.log(x, y);
+
+//MORE OPERATORS
+
+x *= 2;
+console.log(x);
+x += 10;
+console.log(x);
+x++;
+console.log(x);
+x--;
+console.log(x);
