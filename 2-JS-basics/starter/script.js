@@ -515,39 +515,79 @@ Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and heig
 GOOD LUCK 😀
 */
 
-var mark, john;
+// var mark, john;
 
 
-john = {
-    fullName: 'John Smith',
-    mass:110, //kg
-    height: 1.95, //meters
-    bmiCalc: function(){
-        this.bmi = this.mass / (this.height * this.height);
-        return this.bmi
-    }
+// john = {
+//     fullName: 'John Smith',
+//     mass:110, //kg
+//     height: 1.95, //meters
+//     bmiCalc: function(){
+//         this.bmi = this.mass / (this.height * this.height);
+//         return this.bmi
+//     }
+// }
+
+// mark = {
+//     fullName: 'Mark Smith',
+//     mass: 78, //kg
+//     height: 1.69, //meters
+//     bmiCalc: function(){
+//         this.bmi = this.mass / (this.height * this.height);
+//         return this.bmi
+//     }
+// }
+
+
+
+
+// if (john.bmiCalc() > mark.bmiCalc()) {
+//     console.log(john.fullName + ' has a higher BMI of ' + john.bmi)
+// } else if((mark.bmi > john.bmi)) {
+//     console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi)
+// } else {
+//     console.log('They have the same BMI')
+// };
+
+
+
+
+/*****************************
+* LOOPS AND ITERATION
+*/
+
+// for (var i = 1; i < 20; i+= 2) {
+//     console.log(i);
+// }
+
+// i = 0, 0 < 10 true, log i to console, i++
+// i =1, 1 < 10 true, log i to console, i++
+//..happens a few more times
+// i = 9, 9 < 10 true, log i to console, i++
+// i =10, 10 < 10 FALSE, EXIT THE LOOP! 
+
+
+// var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+// for (var i = 0; i < john.length; i++)
+// console.log(john[i]);
+
+// //While Loop
+// var i = 0;
+// while(i < john.length) {
+//     console.log(john[i]);
+//     i++;
+// }
+
+//continue and break statements
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+for (var i = 0; i < john.length; i++){
+    if(typeof john[i] !== 'string') continue;
+    console.log(john[i]);
 }
 
-mark = {
-    fullName: 'Mark Smith',
-    mass: 78, //kg
-    height: 1.69, //meters
-    bmiCalc: function(){
-        this.bmi = this.mass / (this.height * this.height);
-        return this.bmi
-    }
+for (var i =0; i<john.length; i++) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
 }
 
-
-
-
-if (john.bmiCalc() > mark.bmiCalc()) {
-    console.log(john.fullName + ' has a higher BMI of ' + john.bmi)
-} else if((mark.bmi > john.bmi)) {
-    console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi)
-} else {
-    console.log('They have the same BMI')
-};
-
-
-
+//looping backwards
