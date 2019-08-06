@@ -316,29 +316,52 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 GOOD LUCK 😀
 */
 
-var scoreJohn, scoreMike, scoreMary;
-scoreJohn = (89 + 120 + 103) / 3;
-scoreMike = (111 + 94 + 123) / 3;
-scoreMary = (97 + 134 + 105) / 3;
-// console.log(scoreJohn, scoreMike, scoreMary);
+// var scoreJohn, scoreMike, scoreMary;
+// scoreJohn = (89 + 120 + 103) / 3;
+// scoreMike = (111 + 94 + 123) / 3;
+// scoreMary = (97 + 134 + 105) / 3;
+// // console.log(scoreJohn, scoreMike, scoreMary);
 
-/// SOLUTION TO STEPS 1-3
-// if (scoreJohn > scoreMike) {
+// /// SOLUTION TO STEPS 1-3
+// // if (scoreJohn > scoreMike) {
+// //     console.log('John\'s team wins with ' + scoreJohn + ' points');
+// // } else if (scoreMike >scoreJohn) {
+// //     console.log('Mike\'s team wins with ' + scoreMike + ' points');
+// // } else {
+// //     console.log('There is a draw')
+// // }
+
+// //SOLUTION TO EXTRA STEPS USING LOGICAL OPERATORS 
+// if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
 //     console.log('John\'s team wins with ' + scoreJohn + ' points');
-// } else if (scoreMike >scoreJohn) {
+// } else if (scoreMike > scoreJohn & scoreMike > scoreMary) {
 //     console.log('Mike\'s team wins with ' + scoreMike + ' points');
+// } else if (scoreMary > scoreJohn & scoreMary > scoreMike) {
+//     console.log('Mary\'s team wins with ' + scoreMike + ' points');
 // } else {
 //     console.log('There is a draw')
 // }
 
-//SOLUTION TO EXTRA STEPS USING LOGICAL OPERATORS 
-if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
-    console.log('John\'s team wins with ' + scoreJohn + ' points');
-} else if (scoreMike > scoreJohn & scoreMike > scoreMary) {
-    console.log('Mike\'s team wins with ' + scoreMike + ' points');
-} else if (scoreMary > scoreJohn & scoreMary > scoreMike) {
-    console.log('Mary\'s team wins with ' + scoreMike + ' points');
-} else {
-    console.log('There is a draw')
+
+
+/*****************************
+ * Function Statements and Expressions //Expressions produce an immediate value /// statements dont return an result immediately  
+ */
+
+var whatDoYouDo = function(job, firstName) {
+switch(job) {
+    case 'teacher':
+        return firstName + ' teaches kids how to code';
+    case 'driver':
+        return firstName + ' drives an Uber in Libson';
+    case 'designer':
+        return firstName + ' designs beautiful websites';
+    default: 
+        return firstName + ' does somethign else';
+    }   
 }
+
+console.log(whatDoYouDo ('teacher', 'John'));
+console.log(whatDoYouDo ('designer', 'Jane'));
+console.log(whatDoYouDo ('retired', 'Mark'));
 
