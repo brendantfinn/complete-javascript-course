@@ -458,28 +458,52 @@ GOOD LUCK 😀
 */
 
 //CURLY BRACES === {} OBJECT LITERALS
+// var john = {
+// //  key: 'Value' \\\\\KEY VALUE PAIRS
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false
+// };
+// console.log(john.firstName + ' ' + john.lastName); // Access values via dot notation or bracket notation
+// console.log(john['lastName']); // or Bracket notation
+// var x = 'birthYear';
+// console.log(john[x]); // only seems to work with braket notation
+
+// john.job = 'designer';
+// john['isMarried'] = true;
+// console.log(john);
+
+
+// //NEW OBJECT SYNTAX
+// var jane = new Object();
+// jane.firstName = 'Jane';
+// jane.birthYear = 1969;
+// jane['lastName'] = 'Smith';
+// console.log(jane);
+
+
+
+
+
+
+/*****************************
+* OBJECT AND PROPERTIES 
+*/
+var curentYear = 2019;
 var john = {
-//  key: 'Value' \\\\\KEY VALUE PAIRS
     firstName: 'John',
     lastName: 'Smith',
-    birthYear: 1990,
+    birthYear: 1992,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'teacher',
-    isMarried: false
+    isMarried: false,
+    calcAge: function(birthYear) {
+        this.age = curentYear - this.birthYear; // this. means THIS CURRENT OBJECT 
+    }
 };
-console.log(john.firstName + ' ' + john.lastName); // Access values via dot notation or bracket notation
-console.log(john['lastName']); // or Bracket notation
-var x = 'birthYear';
-console.log(john[x]); // only seems to work with braket notation
 
-john.job = 'designer';
-john['isMarried'] = true;
+john.calcAge();
 console.log(john);
-
-
-//NEW OBJECT SYNTAX
-var jane = new Object();
-jane.firstName = 'Jane';
-jane.birthYear = 1969;
-jane['lastName'] = 'Smith';
-console.log(jane);
