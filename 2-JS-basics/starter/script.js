@@ -90,32 +90,64 @@
 /**************************
 * OPERATOR PRECEDENCE 
 ***************************/
-var now = 2018;
-var yearJohn = 1989;
-var fullAge = 18;
+// var now = 2018;
+// var yearJohn = 1989;
+// var fullAge = 18;
 
-//MULTIPLE OPERATORS
-var isFullAge = now - yearJohn >= fullAge; //true
-console.log(isFullAge)
+// //MULTIPLE OPERATORS
+// var isFullAge = now - yearJohn >= fullAge; //true
+// console.log(isFullAge)
 
-//GROUPING
-var ageJohn = now - yearJohn;
-var ageMark = 35;
-var average = ageJohn + ageMark / 2;
+// //GROUPING
+// var ageJohn = now - yearJohn;
+// var ageMark = 35;
+// var average = ageJohn + ageMark / 2;
 
-//MULTIPLE ASSIGNMENTS 
-var x, y;
-x = y = (3+5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // ===26
-// ASIGNMENT OPERATOR ASSOCIATIVITY WORKS RIGTH TO LEFT 
-console.log(x, y);
+// //MULTIPLE ASSIGNMENTS 
+// var x, y;
+// x = y = (3+5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // ===26
+// // ASIGNMENT OPERATOR ASSOCIATIVITY WORKS RIGTH TO LEFT 
+// console.log(x, y);
 
-//MORE OPERATORS
+// //MORE OPERATORS
 
-x *= 2;
-console.log(x);
-x += 10;
-console.log(x);
-x++;
-console.log(x);
-x--;
-console.log(x);
+// x *= 2;
+// console.log(x);
+// x += 10;
+// console.log(x);
+// x++;
+// console.log(x);
+// x--;
+// console.log(x);
+
+
+
+/*****************************
+* CODING CHALLENGE 1
+*/
+
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
+
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs
+3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
+4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
+
+GOOD LUCK 😀
+*/
+
+// var massJohn, heightJohn, bmiJohn, massMark, heightMark, bmiMark, markHigherBmi;
+// massMark = 78; //kg
+// heightMark = 1.69; //meters
+// bmiMark = massMark / (heightMark * heightMark);
+
+// massJohn = 92; // kg
+// heightJohn = 1.95; // meters
+// bmiJohn = massJohn / (heightJohn * heightJohn);
+
+
+// markHigherBmi = bmiMark > bmiJohn;
+// console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBmi);
+// console.log('Mark BMI: ' + bmiMark, 'John BMI: ' + bmiJohn)
+
