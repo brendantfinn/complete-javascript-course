@@ -348,20 +348,54 @@ GOOD LUCK 😀
  * Function Statements and Expressions //Expressions produce an immediate value /// statements dont return an result immediately  
  */
 
-var whatDoYouDo = function(job, firstName) {
-switch(job) {
-    case 'teacher':
-        return firstName + ' teaches kids how to code';
-    case 'driver':
-        return firstName + ' drives an Uber in Libson';
-    case 'designer':
-        return firstName + ' designs beautiful websites';
-    default: 
-        return firstName + ' does somethign else';
-    }   
-}
+// var whatDoYouDo = function(job, firstName) {
+// switch(job) {
+//     case 'teacher':
+//         return firstName + ' teaches kids how to code';
+//     case 'driver':
+//         return firstName + ' drives an Uber in Libson';
+//     case 'designer':
+//         return firstName + ' designs beautiful websites';
+//     default: 
+//         return firstName + ' does somethign else';
+//     }   
+// }
 
-console.log(whatDoYouDo ('teacher', 'John'));
-console.log(whatDoYouDo ('designer', 'Jane'));
-console.log(whatDoYouDo ('retired', 'Mark'));
+// console.log(whatDoYouDo ('teacher', 'John'));
+// console.log(whatDoYouDo ('designer', 'Jane'));
+// console.log(whatDoYouDo ('retired', 'Mark'));
 
+
+/*****************************
+ * ARRAYS
+ */
+
+ //Initilized new array
+ var names = ['John', 'Mark', 'Jane']
+ var years = new Array(1990, 1969, 1948);
+
+ console.log(names[2]);
+ console.log(names.length);
+
+ // Mutated Array Data
+ names[1] = 'Ben';
+ names[names.length] = 'Mary';
+ console.log(names);
+
+ //Different Data Types
+ var john = ['John', 'Smith', 1990, 'teacher', false];
+
+ john.push('blue'); // adds element to the end of the array
+ john.unshift('Mr.'); // Adds element to the begining of the array 
+console.log(john);
+
+john.pop()
+john.shift()
+console.log(john);
+
+//indexOf basically searches the array for element to return to you what spot its in
+console.log(john.indexOf(23)); // -1 means element is not in array 
+
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
+console.log(isDesigner);
