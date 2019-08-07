@@ -556,27 +556,27 @@ GOOD LUCK 😀
 * LOOPS AND ITERATION
 */
 
-// for (var i = 1; i < 20; i+= 2) {
-//     console.log(i);
-// }
+for (var i = 1; i < 20; i+= 2) {
+    console.log(i);
+}
 
 // i = 0, 0 < 10 true, log i to console, i++
 // i =1, 1 < 10 true, log i to console, i++
-//..happens a few more times
+// ..happens a few more times
 // i = 9, 9 < 10 true, log i to console, i++
 // i =10, 10 < 10 FALSE, EXIT THE LOOP! 
 
 
-// var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
-// for (var i = 0; i < john.length; i++)
-// console.log(john[i]);
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+for (var i = 0; i < john.length; i++)
+console.log(john[i]);
 
-// //While Loop
-// var i = 0;
-// while(i < john.length) {
-//     console.log(john[i]);
-//     i++;
-// }
+//While Loop
+var i = 0;
+while(i < john.length) {
+    console.log(john[i]);
+    i++;
+}
 
 //continue and break statements
 var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
@@ -591,3 +591,7 @@ for (var i =0; i<john.length; i++) {
 }
 
 //looping backwards
+for (var i = john.length -1; i >= 0; i--){
+console.log(john[i]);
+}
+    
