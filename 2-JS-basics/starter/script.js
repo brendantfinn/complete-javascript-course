@@ -137,6 +137,33 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 GOOD LUCK 😀
 */
 
+//////////// /// sept 26 try again
+
+// let massMark = 78;
+// let heightMark = 1.69;
+
+// let massJohn = 92; //kg
+// let heightJohn = 1.95; // meters
+
+// let markBMI = massMark / (heightMark * heightMark);
+// let johnBMI = massJohn / (heightJohn * heightJohn);
+
+// console.log(`MARK BMI: ${markBMI}`)
+// console.log(`JOHN BMI: ${johnBMI}`)
+
+// let markHigherBMI = markBMI > johnBMI;
+ 
+// if(markBMI > johnBMI){
+//     console.log('Is Mark\'s BMI higher than John\'s?' + markHigherBMI)
+// } else {
+//     console.log('Is Mark\'s BMI higher than John\'s?' + markHigherBMI)
+// }
+
+
+///old stuff
+
+
+
 // var massJohn, heightJohn, bmiJohn, massMark, heightMark, bmiMark, markHigherBmi;
 // massMark = 78; //kg
 // heightMark = 1.69; //meters
@@ -627,30 +654,37 @@ GOOD LUCK 😀
 */
 
 
-var john = {
-    fullName: 'John Smith',
-    bills: [124, 48, 268, 180, 42],
-    calcTips: function() {
-        this.tips = [];
-        this.finalValues = [];
+// var john = {
+//     fullName: 'John Smith',
+//     bills: [124, 48, 268, 180, 42],
+//     calcTips: function() {
+//         this.tips = [];
+//         this.finalValues = [];
 
-        for(var i = 0; i < this.bills.length; i++){
-            //Determine percentage based on tipping rules
-            var percentage;
-            var bill = this.bills[i];
+//         for(var i = 0; i < this.bills.length; i++){
+//             //Determine percentage based on tipping rules
+//             var percentage;
+//             var bill = this.bills[i];
 
-            if  (bill< 50){
-                percentage = .2;
-            } else if (bill >= 50 && bill < 200){
-                percentage = .15;
-            } else {
-                percentage = .1;
-            }
-            //add results to the corresponding arrays
-            this.tips[i] = bill * percentage;
-            this.finalValues[i] = bill + bill * percentage;
-        }
-    }
-};
-john.calcTips();
-console.log(john);
+//             if  (bill< 50){
+//                 percentage = .2;
+//             } else if (bill >= 50 && bill < 200){
+//                 percentage = .15;
+//             } else {
+//                 percentage = .1;
+//             }
+//             //add results to the corresponding arrays
+//             this.tips[i] = bill * percentage;
+//             this.finalValues[i] = bill + bill * percentage;
+//         }
+//     }
+// };
+// john.calcTips();
+// console.log(john);
+
+
+
+
+
+
+
