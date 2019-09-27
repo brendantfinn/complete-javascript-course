@@ -686,5 +686,77 @@ GOOD LUCK 😀
 
 
 
+/***************************  AS OF 08/26 RESTARTED AFTER CHALALNGE 1 ******************** **/
+/***************************  AS OF 08/26 RESTARTED AFTER CHALALNGE 1 ******************** **/
+/***************************  AS OF 08/26 RESTARTED AFTER CHALALNGE 1 ******************** **/
+/***************************  AS OF 08/26 RESTARTED AFTER CHALALNGE 1 ******************** **/
+// // // // 15. Boolean Logic
+/***************
+ * Boolean Logic
+ */
+
+
+//  let firstName = 'John';
+//  let age = 16;
+
+//  if(age < 13){
+//     console.log(` ${firstName} is a boy.`);
+//  } else if(age >= 13 && age < 20){
+//     console.log(`${firstName} is a teenager`);
+//  } else {
+//     console.log(`${firstName} is a man`);
+//  }
+
+
+// // // // 16. The Ternary Operator and Switch Statements
+/***************
+ * The Ternary Operator and Switch Statements
+ */
+
+ let firstName = 'John';
+ let age = 21;
+
+ age >= 18 ? console.log(`${firstName} drinks beer.`) : console.log(`${firstName} drinks juice`);
+
+ let drink = age >= 18 ? 'beer' : 'juice'
+ console.log(drink)
+
+//  if (age >= 18) {
+//      let drink = 'beer';
+//  } else {
+//      let drink = 'juice';
+//  }
+
+// Switch Statement 
+let job = 'designer';
+switch(job){
+    case 'teacher':
+        console.log(`${firstName} teaches kids how to code.`);
+        break;
+    case 'driver':
+        console.log(`${firstName} drives around libson.`); 
+        break;
+    case 'designer':
+        console.log(`${firstName} designs beautiful websites.`);
+        break;
+    default:
+        console.log(`${firstName} does something else.`);
+    }
+
+
+    age = 25;
+    switch(true){
+        case age < 13:
+            console.log(` ${firstName} is a boy.`);
+            break;
+        case age >= 13 && age < 20:
+            console.log(` ${firstName} is a teenager.`);
+            break;
+        case age >= 20 && age < 30:
+            console.log(` ${firstName} is a young man.`);
+            break;
+        default:
+            console.log(`${firstName} is a man`)
+    }
 
 
